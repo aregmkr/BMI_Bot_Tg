@@ -1,0 +1,1 @@
+worker: java -jar build/libs/BMI_BOT_Tg-1.0-SNAPSHOT.jar
