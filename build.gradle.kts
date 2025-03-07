@@ -35,8 +35,3 @@ tasks.jar {
         attributes["Main-Class"] = "BmiBotKt"
     }
 }
-
-tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
-    archiveClassifier.set("")  // Remove '-all' suffix
-    mergeServiceFiles() // This helps with dependencies like dotenv
-}
