@@ -18,8 +18,10 @@ data class BmiRecord(
 val history_bmi: MutableMap<Long, MutableList<BmiRecord>> = mutableMapOf()
 
 fun main() {
-    val dotenv = Dotenv.load()
-    val botToken = dotenv["TELEGRAM_BOT_TOKEN"]
+//    val dotenv = Dotenv.load()
+//    val botToken = dotenv["TELEGRAM_BOT_TOKEN"]
+
+    val botToken = System.getenv("TELEGRAM_BOT_TOKEN")
 
     var started: Boolean = false
     val bot = bot {

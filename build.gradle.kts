@@ -30,8 +30,10 @@ application {
     mainClass.set("BmiBotKt")
 }
 
-tasks.jar {
-    manifest {
-        attributes["Main-Class"] = "BmiBotKt"
+tasks {
+    shadowJar {
+        archiveBaseName.set("BmiBot")
+        archiveClassifier.set("")
+        archiveVersion.set("")
     }
 }
