@@ -28,3 +28,9 @@ kotlin {
 application {
     mainClass.set("com.example.BmiBotKt")
 }
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "com.example.BmiBotKt"
+    }
+}
