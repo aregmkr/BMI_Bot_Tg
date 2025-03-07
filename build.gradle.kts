@@ -26,18 +26,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("com.example.bmi_bot")
-}
-
-tasks.jar {
-    manifest {
-        attributes(
-            "Main-Class" to "com.example.bmi_bot"
-        )
-    }
-}
-
-// Ensure the source sets are included
-tasks.withType<Jar> {
-    from(sourceSets.main.get().output)
+    mainClass.set("com.example.BmiBotKt")
 }
